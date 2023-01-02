@@ -1,0 +1,21 @@
+Compulsory Task 1
+1) semantic.py was created to run extracted codes
+2) From the similarities between cat, monkey and banana, cat and monkey has the highest simiarity. It is because cat and moneky both are animals, monkey and banana has higher siminarity than cat and banana because we know monkey eat banana, but cat don't
+
+- python code - 
+word1 = nlp("tiger")
+word2 = nlp("cat")
+word3 = nlp("dog")
+print(f"{word1} and {word2} simiarity: {word1.similarity(word2)}")
+print(f"{word3} and {word2} simiarity: {word3.similarity(word2)}")
+print(f"{word3} and {word1} simiarity: {word3.similarity(word1)}")
+
+''' Simiarity result
+tiger and cat simiarity: 0.5670855075810189
+dog and cat simiarity: 0.8220816752553904
+dog and tiger simiarity: 0.42287226182503856
+'''
+
+I can think of other example of looking at the similarities of tiger, cat, and dog above, Although they all are animals, but their similarities are not the same. Firstly dog and cat has the highest similarity because we all love cat and dog to be our lovely pet. Secondly, tiger and cat has higher similarity than tiger and dog It is because we already known tiger and cat belong to the same family with more than 95% of DNA in common.
+
+3) excuted the example.py with language model ‘en_core_web_sm’ and ‘en_core_web_md’, ‘en_core_web_sm’ has lower simiarities in all cases because no word vectors loaded in this model, so similarity method is based on the tagger, parser and NER.
